@@ -1,0 +1,16 @@
+{
+    "name": "Move Onshape Tab Manager Button",
+    "description": "Move the Tab Manager button to top of the left panel in Onshape",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts":["background.js"]
+      },
+    "content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://*.onshape.com/*"]
+      }],
+      "permissions": [
+        "tabs"
+      ]
+  }
